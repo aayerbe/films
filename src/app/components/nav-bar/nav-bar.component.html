@@ -1,0 +1,53 @@
+<!-- <mat-toolbar>
+  <span class="my-app-logo" routerLink="/">My App</span>
+  <span class="example-spacer"></span>
+
+  <form action="/search/">
+    <mat-form-field>
+      <input
+        name="film"
+        value="{{ searchFilm }}"
+        matInput
+        placeholder="Search"
+      />
+
+      <input type="submit" (click)="search()" />
+      <span class="material-symbols-outlined"> search </span>/>
+    </mat-form-field>
+  </form>
+</mat-toolbar> -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Navbar</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex" role="search" action="/search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          name="film"
+          value="{{ searchFilm }}"
+        />
+        <button
+          class="btn btn-outline-success"
+          (click)="search()"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>

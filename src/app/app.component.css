@@ -1,0 +1,17 @@
+.app-container {
+  display: grid;
+  grid-template:
+    "nav-bar nav-bar"
+    "side-bar hero";
+  grid-template-columns: 1fr 10fr;
+}
+
+.app-nav-bar {
+  grid-area: nav-bar;
+}
+.app-side-bar {
+  grid-area: side-bar;
+}
+.app-hero {
+  grid-area: hero;
+}

@@ -1,0 +1,8 @@
+<mat-spinner *ngIf="(movies$ | async)?.isLoading"></mat-spinner>
+<div class="container-hero">
+  <ng-container *ngIf="(movies$ | async)?.loaded">
+    <ng-container *ngFor="let movie of (movies$ | async)?.movieList">
+      <app-card [movie]="movie"></app-card>
+    </ng-container>
+  </ng-container>
+</div>
